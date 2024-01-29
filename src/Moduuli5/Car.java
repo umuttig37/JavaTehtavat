@@ -1,27 +1,15 @@
 package Moduuli5;
 
-/* Define a class Moduuli5.Car (convention capitalizes class names).
- * Moduuli5.Car is public (as classes usually are, more on this later).
- */
 public class Car {
-    /* An object of class Moduuli5.Car will have instance variables speed and gasolineLevel.
-     * Both are private (they can not be accessed outside the class methods).
-     * Keep instance variables private whenever possible.
-     */
+
     private float speed;
     private float gasolineLevel;
     private String typeName;
     private int topSpeed;
     private boolean cruiseControlOnOff;
 
-    /* This is the method (constructor) called when a new instance of Moduuli5.Car is created (with new).
-     * Constructors may also have arguments.
-     */
     public Car(String typeName) {
         this.gasolineLevel = gasolineLevel;
-        // this refers to the object itself.
-        // The reference is useful if you want to use parameter names that are
-        // identical to instance variable names (and for more, later on)
     }
 
     public Car(int topSpeed, int gasolineLevel){

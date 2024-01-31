@@ -12,9 +12,15 @@ public class Car {
         this.gasolineLevel = gasolineLevel;
     }
 
+
     public Car(int topSpeed, int gasolineLevel){
         this.topSpeed = topSpeed;
         this.gasolineLevel = gasolineLevel;
+    }
+    public Car(String typename, int gasolineLevel, int topSpeed){
+        this.typeName = typename;
+        this.gasolineLevel = gasolineLevel;
+        this.topSpeed = topSpeed;
     }
 
     public void CruiseControl(int targetspeed){
@@ -51,7 +57,7 @@ public class Car {
             speed = 0;
         System.out.println("Speed is now " + speed + ".");
     }
-    void decelerate(int amount) {
+   public void decelerate(int amount) {
         if (gasolineLevel > 0) {
             if (amount > 0)
                 speed = Math.max(0, speed - amount);
@@ -59,8 +65,12 @@ public class Car {
             speed = 0;
         System.out.println("Speed is now " + speed + ".");
     }
-    float getSpeed() {
+    protected float getSpeed() {
         return speed;
+    }
+   protected float setSpeed(float speed){
+        this.speed = speed;
+        return this.speed;
     }
     String getTypeName() {
         return typeName;
@@ -68,7 +78,7 @@ public class Car {
     void fillTank() {
         gasolineLevel = 100;
     }
-    float getGasolineLevel() {
+    protected float getGasolineLevel() {
         return gasolineLevel;
     }
     public static void main(String[] args){

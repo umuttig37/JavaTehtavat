@@ -115,18 +115,4 @@ public class Library {
     }
     }
 
-    public static void main(String[] args){
-        Book book1 = new Book("The wolf of the wallstreet", "Jordan Belfort", 2007);
-        Book book2 = new Book("Umut's Book", "Umut Uygur", 2024);
-        Book book3 = new Book("Umut's second book", "Umut Uygur", 2020);
-        Library library = new Library();
-
-        library.addBook(book1);
-        library.addBook(book2);
-        library.addBook(book3);
-
-        library.displayBooks();
-        library.findBooksByAuthor("Umut Uygur");
-        library.findBooksByAuthor("aaaa");
-    }
 

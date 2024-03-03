@@ -1,4 +1,4 @@
-package Synchronization;
+package ModuleSynchronization.TicketTask;
 class Customer implements Runnable {
     private static int customerCounter = 1;
     private final TicketTask TicketMaster;

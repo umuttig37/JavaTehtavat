@@ -1,4 +1,4 @@
-package ThreadSafe;
+package ModuleSynchronization.ThreadSafe;
 public class ThreadSafety {
     public static void main(String[] args) {
         ThreadSafeArrayListManager<String> manager = new ThreadSafeArrayListManager<>();

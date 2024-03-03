@@ -1,4 +1,4 @@
-package ThreadSafe;
+package ModuleSynchronization.ThreadSafe;
 
 import java.util.ArrayList;
 import java.util.Collections;
